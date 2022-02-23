@@ -1,8 +1,7 @@
 Some basic Git commands are:
 ```
-git status
-git add
-git commit
+npm install
+npm start
 ```
 
 
