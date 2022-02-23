@@ -26,11 +26,11 @@ const myConnection  = require('express-myconnection');
 
 dotenv.config();
 var dbOptions = {
-  host: "127.0.0.1",
-  user: "root",
-  password: "vatsal123",
-  port: 3306,
-  database: "NORDSON"
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
+  database: process.env.DB_NAME
 }
 
 const userRoute = require("./routes/user");
