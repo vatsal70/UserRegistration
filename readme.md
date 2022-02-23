@@ -7,12 +7,12 @@ Find the Content Useful?
 
 #### Contents
 
-1. Node Tutorial
-2. Express Tutorial
-3. Task Manager (MongoDB, Mongoose)
-4. Store API
-5. JWT Basics
-6. Jobs API
+1. Create Table 'users
+2. Add Users
+3. Login Users
+4. Logout Users
+5. Reset Password Request via Email
+6. Password Reset
 
 #### Course Exclusive
 
