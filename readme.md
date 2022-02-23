@@ -1,3 +1,19 @@
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
+
+
+
+
+
+
+
+
+
+
 #### Contents
 
 1. Create Table 'users
