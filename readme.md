@@ -32,4 +32,4 @@ npm start
 3. POST  127.0.0.1:3000/api/users/loginUsers
 4. GET   127.0.0.1:3000/api/users/logout
 5. POST  127.0.0.1:3000/api/users/reset-password-email
-6. POST  http://127.0.0.1:3000/api/users/update-password/<token>
+6. POST  127.0.0.1:3000/api/users/update-password/<token>
