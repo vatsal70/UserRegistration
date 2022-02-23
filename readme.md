@@ -1,4 +1,7 @@
-Some basic Git commands are:
+
+
+
+Commands to download the dependencies and start the server:
 ```
 npm install
 npm start
