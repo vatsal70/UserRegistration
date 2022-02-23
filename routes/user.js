@@ -234,7 +234,7 @@ router.post('/loginUsers', async function(req, res, next) {
 
 
 
-
+// LOGOUT USER
 router.get('/logout', function (req, res) {
       req.session.destroy();
       res.status(200).send({
@@ -246,7 +246,7 @@ router.get('/logout', function (req, res) {
 
 
 
-/* send reset password link in email */
+// REQUEST TO RESET THE PASSWORD VIA EMAIL
 router.post('/reset-password-email', function(req, res, next) {
  
       var email = req.body.email;
@@ -297,7 +297,7 @@ router.post('/reset-password-email', function(req, res, next) {
 
 
 
-/* update password to database */
+// RESET THE PASSWORD USING THE TOKEN RECIEVED VIA EMAIL
 router.post('/update-password/:token', function(req, res, next) {
  
       // var token = req.body.token;
