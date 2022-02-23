@@ -5,22 +5,23 @@ const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 const randtoken = require('rand-token');
 var nodemailer = require('nodemailer');
-const { token } = require('morgan');
+//const { token } = require('morgan');
+require('dotenv').config()
 function sendEmail(email, token) {
  
       var email = email;
       var token = token;
    
       var mail = nodemailer.createTransport({
-          service: 'gmail',
+          service: process.env.EMAIL_SERVICE,
           auth: {
-              user: 'studentteacherportal001@gmail.com', // Your email id
-              pass: 'lfdapdixwqaujbmh' // Your password
+              user: process.env.EMAIL_USER_ID, // Your email id
+              pass: process.env.EMAIL_USER_PASSWORD // Your password
           }
       });
    
       var mailOptions = {
-          from: 'studentteacherportal001@gmail.com',
+          from: process.env.EMAIL_USER_ID,
           to: email,
           subject: 'Reset Password Link - userregistration.com',
           html: '<p>You requested for reset password, kindly use this <a href="http://127.0.0.1:3000/api/users/update-password/' + token + '">link</a> to reset your password</p>'
